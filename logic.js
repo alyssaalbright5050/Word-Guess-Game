@@ -37,6 +37,7 @@ function gameStart() {
     }
 }
 
+
 document.onkeyup = function (event) {
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
     console.log(userGuess);
@@ -69,7 +70,7 @@ document.onkeyup = function (event) {
         if (underScore.join("") === chosenBandName) {
             wins++;
             document.getElementById("wins").innerHTML = wins;
-
+            alert("You won!");
 
             gameStart();
 
@@ -78,7 +79,7 @@ document.onkeyup = function (event) {
         else if (guessesLeft === 0) {
             losses++;
             document.getElementById("losses").innerHTML = losses;
-
+            alert("You lost");
 
             gameStart();
 
