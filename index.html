@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 id="userProgress" class="display-4">_ _ _ _ _</h1>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Game Stats
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Wins: <span id="wins">0</span></li>
+                        <li class="list-group-item">Losses: <span id="losses">0</span></li>
+                        <li class="list-group-item">Already Guessed: <span id="prevGuesses"></span></li>
+                        <li class="list-group-item">Guesses Left: <span id="guessesleft"></span></li>
+                        <li class="list-group-item">Current Word: <span id="theWord"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
